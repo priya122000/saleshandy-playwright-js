@@ -1,0 +1,4 @@
+{
+  "testing.automaticallyOpenPeekView": "never",
+  "playwright.reuseBrowser": true
+}

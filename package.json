@@ -1,0 +1,28 @@
+{
+  "name": "saleshandy-playwright-js",
+  "version": "1.0.0",
+  "description": "Reusable Playwright JavaScript automation framework for Saleshandy sign-up and onboarding flows.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:personal": "playwright test --grep @personal",
+    "test:business": "playwright test --grep @business",
+    "test:client": "playwright test --grep @client",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "javascript",
+    "saleshandy",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "dotenv": "^16.4.5"
+  }
+}

@@ -1,0 +1,25 @@
+ID,Type,Account,Area,Scenario,Expected Result
+TC-SU-001,Positive,Personal Use,Sign-up,Valid personal sign-up,Account is created and Personal onboarding opens
+TC-SU-002,Positive,Business,Sign-up,Valid business sign-up,Account is created and Business onboarding opens
+TC-SU-003,Positive,Client,Sign-up,Valid client sign-up,Account is created and Client onboarding opens
+TC-SU-004,Negative,All,Sign-up,Invalid email format,Email validation message is shown
+TC-SU-005,Negative,All,Sign-up,Empty required fields,Required-field validation appears
+TC-SU-006,Negative,All,Sign-up,Weak password,Password policy validation is shown
+TC-SU-007,Negative,All,Sign-up,Duplicate email,Duplicate account validation is shown
+TC-SU-008,Edge,All,Sign-up,Email with plus alias,Valid plus-address email is accepted
+TC-SU-009,Edge,All,Sign-up,Leading/trailing spaces,Values are trimmed or validation is shown
+TC-SU-010,Edge,Business/Client,Sign-up,Long company name,Allowed length is accepted or clear validation appears
+TC-OB-001,Positive,Personal Use,Onboarding,Complete personal onboarding,Personal dashboard is displayed
+TC-OB-002,Positive,Business,Onboarding,Complete business onboarding,Business dashboard is displayed
+TC-OB-003,Positive,Client,Onboarding,Complete client onboarding,Client dashboard is displayed
+TC-OB-004,Negative,All,Onboarding,Skip optional step,User proceeds without blocking
+TC-OB-005,Edge,All,Onboarding,Refresh mid-onboarding,User resumes correctly
+TC-OB-006,Edge,All,Onboarding,Logout mid-onboarding,User returns to incomplete onboarding
+TC-OB-007,Edge,All,Onboarding,Browser back navigation,Completed state remains consistent
+TC-UI-001,Positive,Personal Use,Account UI,Personal-only UI,Personal workspace UI is visible
+TC-UI-002,Positive,Business,Account UI,Business-only UI,Team and billing UI are visible
+TC-UI-003,Positive,Client,Account UI,Client-only UI,Client management UI is visible
+TC-UI-004,Negative,Personal Use,Account UI,Client UI hidden for personal user,Client management UI is not visible
+TC-UI-005,Negative,Business,Account UI,Client portal hidden for business user,Client portal UI is not visible
+TC-UI-006,Negative,Client,Account UI,Personal UI hidden for client user,Personal workspace UI is not visible
+TC-UI-007,Edge,All,Account UI,Direct URL access to restricted area,User sees 403 redirect or unavailable state
